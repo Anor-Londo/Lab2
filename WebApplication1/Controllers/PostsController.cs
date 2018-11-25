@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using WebApplication1.Models;
 using WebApplication1.Models.Front;
@@ -26,9 +27,9 @@ namespace WebApplication1.Controllers
 
 
         [HttpGet("posts")]
-        public ActionResult<List<PostsFront>> GetAllPosts()
+        public ActionResult<List<PostsFront>> GetAllPosts(int skip, int take)
         {
-           return _postser.PostsLists();
+           return _postser.PostsLists().Skip(skip).Take(take).ToList();
         }
 
         [HttpPost("post-info")]
