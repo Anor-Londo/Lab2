@@ -12,10 +12,10 @@ namespace WebApplication1.Models.DTO
     {
         [Key]
         [Column("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [Column("post_id")]
-        public long PostId { get; set; }
+        public int PostId { get; set; }
 
         [Column("rating")]
         public int RatingValue { get; set; }
@@ -24,6 +24,6 @@ namespace WebApplication1.Models.DTO
         public DateTime Date { get; set; }
 
         [Column("user_id")]
-        public long UserId { get; set; }
+        public int UserId { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace WebApplication1.Repositories.Comm
         }
 
 
-        public List<Comments> CommentsToPost(long postId)
+        public List<Comments> CommentsToPost(int postId)
         {
             using (var context = new PostgressContext())
             {
@@ -26,7 +26,7 @@ namespace WebApplication1.Repositories.Comm
         }
 
 
-        public void DeleteComm(long commId)
+        public void DeleteComm(int commId)
         {
             using (var context = new PostgressContext())
             {
@@ -53,7 +53,7 @@ namespace WebApplication1.Repositories.Comm
             }
         }
 
-        public void PatchComm(long commId, Comment comment)
+        public void PatchComm(int commId, Comment comment)
         {
             using (var context = new PostgressContext())
             {

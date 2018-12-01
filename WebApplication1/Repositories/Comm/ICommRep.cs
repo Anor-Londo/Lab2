@@ -9,9 +9,9 @@ namespace WebApplication1.Repositories.Comm
 {
     public interface ICommRep
     {
-        List<Comments> CommentsToPost(long postId);
-        void DeleteComm(long commId);
+        List<Comments> CommentsToPost(int postId);
+        void DeleteComm(int commId);
         void PutComm(Comment comment);
-        void PatchComm(long commId, Comment comment);
+        void PatchComm(int commId, Comment comment);
     }
 }

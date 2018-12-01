@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Models.DTO
 {
-    [Table("post", Schema = "mybd")]
+    [Table("post", Schema = "posts")]
     public class Postss
     {
         [Key]
         [Column("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [Column("title")]
         public string Title { get; set; }
@@ -24,12 +24,12 @@ namespace WebApplication1.Models.DTO
         public string Description { get; set; }
 
         [Column("category_id")]
-        public long CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
-        [Column("data")]
+        [Column("date")]
         public DateTime Date { get; set; }
 
         [Column("user_id")]
-        public long UserId { get; set; }
+        public int UserId { get; set; }
     }
 }

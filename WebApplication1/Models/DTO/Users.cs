@@ -13,7 +13,7 @@ namespace WebApplication1.Models.DTO
     {
         [Key]
         [Column("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [Column("name")]
         public string Name { get; set; }

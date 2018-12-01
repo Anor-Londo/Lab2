@@ -33,7 +33,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("post-info")]
-        public ActionResult<GetPostInfo> GetPostInfo(long post_id)
+        public ActionResult<GetPostInfo> GetPostInfo(int post_id)
         {
             var c = _postser.PostsLists().Find(x => x.Id == post_id);
             var a = _postser.PostInfo(post_id);

@@ -26,7 +26,7 @@ namespace WebApplication1.Services.Posts
             _postRep.CreatePost(post);
         }
 
-        public PostInfo PostInfo(long postId)
+        public PostInfo PostInfo(int postId)
         {
             var post = _postRep.Post(postId);
             var comments = _commRep.CommentsToPost(postId);

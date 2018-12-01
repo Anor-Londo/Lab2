@@ -9,6 +9,6 @@ namespace WebApplication1.Repositories.Rating
     public interface IRatingRep
     {
         void PutRating(Models.Front.Rating rating);
-        long GetRating(long postid);
+        int GetRating(int postid);
     }
 }

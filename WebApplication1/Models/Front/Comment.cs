@@ -9,7 +9,7 @@ namespace WebApplication1.Models.Front
     {
         public string Body { get; set; }
         public string Title { get; set; }
-        public long Userid { get; set; }
-        public long Postid { get; set; }
+        public int Userid { get; set; }
+        public int Postid { get; set; }
     }
 }

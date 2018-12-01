@@ -22,7 +22,7 @@ namespace WebApplication1.Controllers
 
 
         [HttpDelete("delete-comm")]
-        public ActionResult DeleteComm(long commId)
+        public ActionResult DeleteComm(int commId)
         {
             try
             {
@@ -51,7 +51,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPatch("patch-comm")]
-        public ActionResult PatchComm(long commId, Comment comment)
+        public ActionResult PatchComm(int commId, Comment comment)
         {
             try
             {

@@ -8,8 +8,8 @@ namespace WebApplication1.Models.Front
     public class Rating
     {
 
-        public long UserId { get; set; }
-        public long PostId { get; set; }
+        public int UserId { get; set; }
+        public int PostId { get; set; }
         public DateTime Date { get; set; }
         public int RatingValue { get; set; }
     }

@@ -13,7 +13,7 @@ namespace WebApplication1.Repositories.Posts
         List<Postss> Posts();
         List<Categories> Categories();
         List<Users> Users();
-        Postss Post(long postId);
+        Postss Post(int postId);
         void CreatePost(Post post);
     }
 }

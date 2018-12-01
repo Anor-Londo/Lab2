@@ -10,6 +10,6 @@ namespace WebApplication1.Models
     {
         public Postss Post { get; set; }
         public List<Comments> Comments { get; set; }
-        public long Rating { get; set; }
+        public int Rating { get; set; }
     }
 }

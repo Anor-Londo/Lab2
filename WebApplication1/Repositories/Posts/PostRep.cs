@@ -41,7 +41,7 @@ namespace WebApplication1.Repositories.Posts
             }
         }
 
-        public Postss Post(long postId)
+        public Postss Post(int postId)
         {
             using (var context = new PostgressContext())
             {

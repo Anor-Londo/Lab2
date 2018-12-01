@@ -10,7 +10,7 @@ namespace WebApplication1.Services.Posts
     public interface IPostService
     {
         List<PostsFront> PostsLists();
-        PostInfo PostInfo(long postId);
+        PostInfo PostInfo(int postId);
         void CreatePost(Post post);
     }
 }

@@ -16,7 +16,7 @@ namespace WebApplication1.Services.Rating
             _ratingRep = ratingRep;
         }
 
-        public long GetRating(long postid)
+        public int GetRating(int postid)
         {
             return _ratingRep.GetRating(postid);
         }

@@ -18,7 +18,7 @@ namespace WebApplication1.Services.Comm
             _commRep = commRep;
         }
 
-        public void DeleteComm(long commId)
+        public void DeleteComm(int commId)
         {
             _commRep.DeleteComm(commId);
         }  
@@ -28,7 +28,7 @@ namespace WebApplication1.Services.Comm
             _commRep.PutComm(comment);
         }
 
-        public void PatchComm(long commId, Comment comment)
+        public void PatchComm(int commId, Comment comment)
         {
             _commRep.PatchComm(commId, comment);
         }

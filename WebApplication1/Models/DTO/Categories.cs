@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Models.DTO
 {
-    [Table("categories", Schema = "mybd")]
+    [Table("categories", Schema = "posts")]
     public class Categories
     {
         [Key]
         [Column("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [Column("name")]
         public string Name { get; set; }

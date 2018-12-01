@@ -15,11 +15,11 @@ namespace WebApplication1.Repositories.Rating
 
         }
 
-        public long GetRating(long postid)
+        public int GetRating(int postid)
         {
             using (var context = new PostgressContext())
             {
-                long sum = 0;
+                int sum = 0;
                 var ratingsList = context.Ratings.Where(x => x.PostId == postid).ToList();
                 foreach (var item in ratingsList)
                 {
@@ -28,6 +28,8 @@ namespace WebApplication1.Repositories.Rating
                 return sum / ratingsList.Count();
             }
         }
+
+       
 
         public void PutRating(Models.Front.Rating rating)
         {

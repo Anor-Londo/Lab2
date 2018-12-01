@@ -8,9 +8,9 @@ namespace WebApplication1.Services.Comm
 {
     public interface ICommService
     {
-        void DeleteComm(long commId);
+        void DeleteComm(int commId);
         void PutComm(Comment comment);
-        void PatchComm(long commId, Comment comment);
+        void PatchComm(int commId, Comment comment);
     
     }
 }

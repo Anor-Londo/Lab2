@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication1.Models.DTO;
-using MySql.Data.EntityFrameworkCore.Extensions;
+
 
 namespace WebApplication1.Models
 {
@@ -19,10 +19,7 @@ namespace WebApplication1.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("Server=localhost;Port=3306;User Id=root; Password=1234;Database=mybd;");
-            optionsBuilder.UseMySQL("Server=localhost;Port=3306;User Id=root; Password=1234;Database=comments;");
-            optionsBuilder.UseMySQL("Server=localhost;Port=3306;User Id=root; Password=1234;Database=user;");
-            optionsBuilder.UseMySQL("Server=localhost;Port=3306;User Id=root; Password=1234;Database=rating;");
+            optionsBuilder.UseSqlServer("Server=REZMSH; Database=post; Trusted_Connection=True;");
         }
     }
 }
